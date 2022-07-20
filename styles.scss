@@ -1,0 +1,89 @@
+body {
+  background-color: #f2f2f2;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.columns {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #d3d6da;
+  border-radius: 2px;
+  margin: 2px;
+  display: inline-block;
+  display: flex;
+  color: gray;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  user-select: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid rgb(35, 35, 35);
+  // background-color: rgb(159, 155, 155);
+}
+
+.alerts {
+  background-color: #787c7e;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// .not-enough {
+//   animation: shake 250ms ease-in-out;
+// }
+
+// @keyframes shake {
+//   10% {
+//     transform: translateX(-5%);
+//   }
+
+//   30% {
+//     transform: translateX(5%);
+//   }
+
+//   50% {
+//     transform: translateX(-7.5%);
+//   }
+
+//   70% {
+//     transform: translateX(7.5%);
+//   }
+
+//   90% {
+//     transform: translateX(-5%);
+//   }
+
+//   100% {
+//     transform: translateX(0);
+//   }
+// }
+
+.submit {
+  transition-duration: 0.9s;
+  transition-timing-function: ease-in-out;
+  transform-style: preserve-3d;
+  // flip the card
+  transform: rotate(360deg) translateZ(1px);
+  border: 2px gray solid;
+  backface-visibility: hidden;
+}
